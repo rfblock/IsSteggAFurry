@@ -1,0 +1,29 @@
+body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+.center {
+	text-align: center;
+	margin: 10px;
+}
+h1 {
+	font-family: 'Roboto';
+	font-size: 96px;
+}
+h2 {
+	font-family: 'Roboto';
+	font-size: 60px;
+}
+h3 {
+	font-family: 'Roboto';
+	font-size: 48px;
+}
+h5 {
+	font-family: 'Roboto';
+	font-size: 24px;
+}
+h6 {
+	font-family: 'Roboto';
+	font-size: 16px;
+}

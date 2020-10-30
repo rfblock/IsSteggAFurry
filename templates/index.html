@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ titles | random }}</title>
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='style.css') }}">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	</head>
+	<body class="center">
+		<h2>Is Steg.g a /Furry?</h2>
+		<h5 class="center">This question has been asked</h5>
+		<h1 class="center">{{ count[0] }}</h1>
+		<h5 class="center">Times,</h5>
+		<h3 class="center">{{ count[1] }}</h1>
+		<h5 class="center">Of which were asked today</h5>
+		<a href="/about"><h6 class="center">But is he?</h6></a>
+		<style>
+			@keyframes ericSucks {
+				0% {background-color: HSL(0, 100%, 60%);}
+				100% {background-color: HSL({{ count[1] }}, 100%, 60%)}
+			}
+			body {
+				animation-name: ericSucks;
+				animation-duration: 2s;
+				background-color: HSL({{ count[1] }}, 100%, 60%)
+			}
+		</style>
+	</body>
+</html>

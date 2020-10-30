@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dumbass idiot makes a website</title>
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='style.css') }}">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	</head>
+	<body class="center">
+		<h3>Steggy is some random idiot who keeps getting called a furry</h1>
+		<h3 class="center">He got so tired of being called a furry, that he made an entire website just to tell everyone to fuck off</h1>
+		<h1>FAQ:</h1>
+		<h5>Q: Who is Edwin?</h5>
+		<h5>A: Edwin is the <b>actual</b> furry that we know</h5>
+		<br>
+		<h5>Q: Who is Adrian?</h5>
+		<h5>A: Some nerd who stole my idea and start at 34 thousand instead of 0</h5>
+		<br>
+		<h5>Q: Who is Cat?</h5>
+		<h5>A: A cat</h5>
+		<br>
+		<h5>Q: Is this on Github?</h5>
+		<a href="https://github.com/rfblock/IsSteggAFurry"><h5>A: Sadly, yes</h5></a>
+		<br>
+		<h5>Q: Are you a furry?</h5>
+		<h5>A: {{ titles | random }}</h5>
+		<style>
+			@keyframes ericSucks {
+				0% {background-color: HSL(0, 100%, 60%);}
+				100% {background-color: HSL({{ count[1] }}, 100%, 60%)}
+			}
+			body {
+				animation-name: ericSucks;
+				animation-duration: 2s;
+				background-color: HSL({{ count[1] }}, 100%, 60%)
+			}
+		</style>
+	</body>
+</html>
